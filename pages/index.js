@@ -1,5 +1,9 @@
-import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'; 
+import NextLink from "next/link";
+import { Button, Container, Box, Heading, Image, useColorModeValue, Link } from '@chakra-ui/react'; 
 import Section from "../components/section";
+import Paragraph from "../components/paragraph";
+import { BioSection, BioYear } from "../components/bio";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const Page = () => {
     return (
@@ -38,7 +42,53 @@ const Page = () => {
                 <Heading as="h3" variant="section-title"> 
                     Work
                 </Heading>
-                <p>Paragraph</p>
+                <Paragraph>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of {' '}
+                    <NextLink href="/works/arkanoid">
+                        <Link>
+                            Arkanoid
+                        </Link>
+                    </NextLink>
+                    .
+                </Paragraph>
+                <Box align="center" my={4}>
+                    <NextLink href="/works">
+                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                            My portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
+            </Section>
+
+            <Section delay={ 0.2 }>
+                <Heading as="h3" variant="section-title">
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>
+                        1999
+                    </BioYear>
+                    Born in Poland.
+                </BioSection>
+                <BioSection>
+                    <BioYear>
+                        2020
+                    </BioYear>
+                    Started working in Blacklabel. Ahoy pirates! ♡ 
+                </BioSection>
+                <BioSection>
+                    <BioYear>
+                        2021
+                    </BioYear>
+                    Completed the bachelors degree in Computer Science at Jagiellonian University in Cracow.
+                </BioSection>
+            </Section>
+
+            <Section delay={ 0.3 }>
+                <Heading as="h3" variant="section-title">
+                    I ♡
+                </Heading>
+                <Paragraph>Running, Music, Books, Design</Paragraph>
             </Section>
         </Container>
     )
