@@ -8,8 +8,10 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 import { useColorMode } from "@chakra-ui/react";
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
 import ThemeToggleButton from '../components/theme-toggle-button';
+import { useControllableProp, useControllableState } from '@chakra-ui/react'
 
 const Page = () => {
+    const [value, setValue] = useControllableState({ defaultValue: 40 })
     const { toggleColorMode } = useColorMode()
 
     return (
@@ -41,9 +43,13 @@ const Page = () => {
                     </Box>
                 </Box>
                 <ThemeToggleButton />
+                <Button onClick={() => setValue(value+1)}>+</Button>
+                    <Box as='span' w='200px' mx='24px'>
+                        {value}
+                    </Box>
                 <Section delay={ 0.1 }>
                     <Heading as="h3" variant="section-title">
-                        Bio
+                    {value}
                     </Heading>
                     <BioSection>
                         <BioYear>
