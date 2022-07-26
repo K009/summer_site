@@ -1,10 +1,12 @@
 import NextLink from "next/link";
-import { Button, Container, Box, Heading, Image, useColorModeValue, Link } from '@chakra-ui/react';
+import { Button, Container, Box, Heading, Image, useColorModeValue, Link, SimpleGrid, List, ListItem, Icon } from '@chakra-ui/react';
 import Layout from '../components/layouts/article'
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { GridItem } from "../components/grid-item";
+import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
 
 const Page = () => {
     return (
@@ -91,6 +93,32 @@ const Page = () => {
                         I ♡
                     </Heading>
                     <Paragraph>Running, Music, Books, Design</Paragraph>
+                </Section>
+
+                <Section delay={ 0.3 }>
+                    <Heading as="h3" variant="section-title">
+                        On the web
+                    </Heading>
+                    <List>
+                        <ListItem>
+                            <Link href="https://github.com/K009" target="_blank">
+                                <Button 
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoGithub} />}
+                                >@K009</Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://pl.linkedin.com/in/dominik-chudy" target="_blank">
+                                <Button 
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoLinkedin} />}
+                                >@Dominik_Chudy</Button>
+                            </Link>
+                        </ListItem>                        
+                    </List>
                 </Section>
             </Container>
         </Layout>
