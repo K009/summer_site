@@ -6,7 +6,7 @@ import thumbArkanoid from "../public/images/inkdrop_eyecatch.png"
 
 const Works = () => {
     return (
-        <Container>
+        <Container mt={6}>
             <Heading as="h3" fontSize={20} mb={4}>
                 Works
             </Heading>

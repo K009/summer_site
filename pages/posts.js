@@ -7,7 +7,7 @@ import thumbWorkflow from "../public/images/inkdrop_eyecatch.png"
 
 const Link = () => (
     <Layout title="Posts">
-        <Container>
+        <Container mt={6}>
             <Heading as="h3" fontSize={20} mb={4}>
                 Popular Posts
             </Heading>
