@@ -20,7 +20,11 @@ const Page = ({ t }) => {
                     <Heading as="h2" variant="page-title">
                         Dominik Chudy
                     </Heading>
-                    <p>{t('Role')}</p>
+                    <NextLink href="/developer">
+                            <Link>
+                                <ThemeToggleButton />
+                            </Link>
+                    </NextLink>
                     </Box>
                     <Box 
                         flexShrink={ 0 }
@@ -40,9 +44,6 @@ const Page = ({ t }) => {
                         />
                     </Box>
                 </Box>
-
-                <ThemeToggleButton />
-
                 <Section delay={ 0.1 }>
                     <Heading as="h3" variant="section-title">
                     Bio
@@ -55,41 +56,39 @@ const Page = ({ t }) => {
                     </BioSection>
                     <BioSection>
                         <BioYear>
+                            2006
+                        </BioYear>
+                        Starting my education.
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>
+                            2015
+                        </BioYear>
+                        Becoming a lifeguard and starting my first job.
+                    </BioSection>                 
+                    <BioSection>
+                        <BioYear>
+                            2018
+                        </BioYear>
+                        Starting my studies at Jagiellonian University (Cracow).
+                    </BioSection>                                          
+                    <BioSection>
+                        <BioYear>
                             2020
                         </BioYear>
-                        Started working in Blacklabel. Ahoy pirates! ♡ 
+                        Started working in Blacklabel as JS Developer. Ahoy pirates!
                     </BioSection>
                     <BioSection>
                         <BioYear>
                             2021
                         </BioYear>
                         Completed the bachelors degree in Computer Science at Jagiellonian University in Cracow.
-                    </BioSection>
+                    </BioSection>               
                 </Section>
+
+               
 
                 <Section delay={ 0.2 }>
-                    <Heading as="h3" variant="section-title"> 
-                        Work
-                    </Heading>
-                    <Paragraph>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of {' '}
-                        <NextLink href="/works/arkanoid">
-                            <Link>
-                                Arkanoid
-                            </Link>
-                        </NextLink>
-                        .
-                    </Paragraph>
-                    <Box align="center" my={4}>
-                        <NextLink href="/works">
-                            <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
-                                My portfolio
-                            </Button>
-                        </NextLink>
-                    </Box>
-                </Section>
-
-                <Section delay={ 0.3 }>
                     <Heading as="h3" variant="section-title">
                         I ♡
                     </Heading>

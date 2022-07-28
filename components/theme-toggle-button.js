@@ -19,20 +19,22 @@ const ThemeToggleButton = () => {
                     aria-label="Toggle theme"
                     colorScheme={useColorModeValue('purple', 'orange')}
                     onClick={() => {
-                        const languages = ['developer', 'tester'];
-                        let languageIndex;
-
-                        if(i18next.language === 'tester'){
-                            languageIndex = 0;
-                        } else languageIndex = 1;
-
-                        i18next
-                            .changeLanguage(languages[languageIndex])
-                            .then((t) => {
-                                t('key'); // -> same as i18next.t
-                            });
-
-                        toggleColorMode()
+                        setTimeout(function(){
+                            const languages = ['developer', 'tester'];
+                            let languageIndex;
+    
+                            if(i18next.language === 'tester'){
+                                languageIndex = 0;
+                            } else languageIndex = 1;
+    
+                            i18next
+                                .changeLanguage(languages[languageIndex])
+                                .then((t) => {
+                                    t('key'); // -> same as i18next.t
+                                });
+    
+                            toggleColorMode()
+                        },500)
                     }}
                 >Who am I?
                 </Button>
