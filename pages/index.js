@@ -5,15 +5,14 @@ import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { useColorMode } from "@chakra-ui/react";
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
 import ThemeToggleButton from '../components/theme-toggle-button';
-import { useControllableProp, useControllableState } from '@chakra-ui/react'
+import i18next from './i18n';
 
-const Page = () => {
-    const [value, setValue] = useControllableState({ defaultValue: 40 })
-    const { toggleColorMode } = useColorMode()
+// the hook
+import { withTranslation } from 'react-i18next';
 
+const Page = ({ t }) => {
     return (
         <Layout>
             <Container>
@@ -22,7 +21,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         Dominik Chudy
                     </Heading>
-                    <p>Developer / Designer</p>
+                    <p>{t('Role')}</p>
                     </Box>
                     <Box 
                         flexShrink={ 0 }
@@ -43,13 +42,24 @@ const Page = () => {
                     </Box>
                 </Box>
                 <ThemeToggleButton />
-                <Button onClick={() => setValue(value+1)}>+</Button>
-                    <Box as='span' w='200px' mx='24px'>
-                        {value}
-                    </Box>
+                <Button onClick={() => {
+                        const languages = ['developer', 'tester'];
+                        let languageIndex;
+
+                        if(i18next.language === 'tester'){
+                            languageIndex = 0;
+                        } else languageIndex = 1;
+
+                        i18next
+                            .changeLanguage(languages[languageIndex])
+                            .then((t) => {
+                                t('key'); // -> same as i18next.t
+                            });
+                    }
+                }>Who am I?</Button>
                 <Section delay={ 0.1 }>
                     <Heading as="h3" variant="section-title">
-                    {value}
+                    Bio
                     </Heading>
                     <BioSection>
                         <BioYear>
@@ -130,4 +140,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default withTranslation()(Page);
