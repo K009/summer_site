@@ -7,7 +7,6 @@ import { BioSection, BioYear } from "../components/bio";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
 import ThemeToggleButton from '../components/theme-toggle-button';
-import i18next from './i18n';
 
 // the hook
 import { withTranslation } from 'react-i18next';
@@ -41,22 +40,9 @@ const Page = ({ t }) => {
                         />
                     </Box>
                 </Box>
+
                 <ThemeToggleButton />
-                <Button onClick={() => {
-                        const languages = ['developer', 'tester'];
-                        let languageIndex;
 
-                        if(i18next.language === 'tester'){
-                            languageIndex = 0;
-                        } else languageIndex = 1;
-
-                        i18next
-                            .changeLanguage(languages[languageIndex])
-                            .then((t) => {
-                                t('key'); // -> same as i18next.t
-                            });
-                    }
-                }>Who am I?</Button>
                 <Section delay={ 0.1 }>
                     <Heading as="h3" variant="section-title">
                     Bio

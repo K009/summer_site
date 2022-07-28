@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
-import { SunIcon, MoonIcon } from "@chakra-ui/icons";
+import { Button, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import i18next from '../pages/i18n';
 
 const ThemeToggleButton = () => {
     const { toggleColorMode } = useColorMode()
@@ -15,13 +15,27 @@ const ThemeToggleButton = () => {
                 exit={{ y:20, opacity: 0 }}
                 transition={{ duration: 0.2 }}
             >
-                <IconButton 
+                <Button 
                     aria-label="Toggle theme"
                     colorScheme={useColorModeValue('purple', 'orange')}
-                    icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-                    onClick={toggleColorMode}
-                >
-                </IconButton>
+                    onClick={() => {
+                        const languages = ['developer', 'tester'];
+                        let languageIndex;
+
+                        if(i18next.language === 'tester'){
+                            languageIndex = 0;
+                        } else languageIndex = 1;
+
+                        i18next
+                            .changeLanguage(languages[languageIndex])
+                            .then((t) => {
+                                t('key'); // -> same as i18next.t
+                            });
+
+                        toggleColorMode()
+                    }}
+                >Who am I?
+                </Button>
             </motion.div>
         </AnimatePresence>
     )
