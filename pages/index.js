@@ -52,7 +52,7 @@ const Page = ({ t }) => {
                         color='blackAlpha.700'
                         fontWeight='bold'
                     >
-                        <GridItem pl='2' bg={useColorModeValue('orange.300', 'orange.300')} area={'nav'}>
+                        <GridItem pl='2' bg={useColorModeValue('#009F93', 'orange.300')} area={'nav'}>
                             <Section>
                                 <Role>
                                     {t('Role')}
