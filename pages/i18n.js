@@ -7,12 +7,14 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   developer: {
     translation: {
-        "Role": "Developer / Designer"
+        "Role": "DEVELOPER",
+        "mainWork": "I've started javascript develeopment a couple years ago. Moving from basic websites done for school projects, going through rock-paper-scissors game I became interested in JS frameworks like React or Vue. I've done some courses, thanks to which I've created more projects like RecipeApp or FavNote. Finally I decided to write about React in my Bachelor thesis, thanks to which I graduated at Jagiellonian Univeristy in Cracow. Here you can check my newest projects: "
     }
   },
   tester: {
     translation: {
-        "Role": "Tester"
+        "Role": "TESTER",
+        "mainWork": "This path of my career began during my second year in Blacklabel. One of our teams needed someone to test their code because a lot of bugs have occured. I've started with manual testing moving to more advanced topics like testing frameworks, automated tests, getting data from several APIS to check correctness. I even started writing our own testing framework and plenty of tests to keep the key functionalities in our project valid and correct. Here you can check my projects in which I worked like a tester:"
     }
   }
 };

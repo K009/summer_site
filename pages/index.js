@@ -1,8 +1,9 @@
 import NextLink from "next/link";
-import { Button, Container, Box, Heading, Image, useColorModeValue, Link, SimpleGrid, List, ListItem, Icon } from '@chakra-ui/react';
+import { Button, Container, Box, Heading, Image, useColorModeValue, Link, SimpleGrid, List, ListItem, Icon, Grid, GridItem } from '@chakra-ui/react';
 import Layout from '../components/layouts/article'
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
+import Role from "../components/role";
 import { BioSection, BioYear } from "../components/bio";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
@@ -40,60 +41,76 @@ const Page = ({ t }) => {
                         />
                     </Box>
                 </Box>
+                
                 <Section delay={ 0.1 }>
-                    <Heading as="h3" variant="section-title">
-                    Bio
-                    </Heading>
-                    <BioSection>
-                        <BioYear>
-                            1999
-                        </BioYear>
-                        Born in Poland.
-                    </BioSection>
-                    <BioSection>
-                        <BioYear>
-                            2006
-                        </BioYear>
-                        Starting my education.
-                    </BioSection>
-                    <BioSection>
-                        <BioYear>
-                            2015
-                        </BioYear>
-                        Becoming a lifeguard and starting my first job.
-                    </BioSection>                 
-                    <BioSection>
-                        <BioYear>
-                            2018
-                        </BioYear>
-                        Starting my studies at Jagiellonian University (Cracow).
-                    </BioSection>                                          
-                    <BioSection>
-                        <BioYear>
-                            2020
-                        </BioYear>
-                        Started working in Blacklabel as JS Developer. Ahoy pirates!
-                    </BioSection>
-                    <BioSection>
-                        <BioYear>
-                            2021
-                        </BioYear>
-                        Completed the bachelors degree in Computer Science at Jagiellonian University in Cracow.
-                    </BioSection>               
+                    <Grid
+                        templateAreas={`"nav main"`}
+                        gridTemplateRows={'50px 1fr 30px'}
+                        gridTemplateColumns={'150px 1fr'}
+                        h='350px' //work on that because on phone view the text overlaps with the work section
+                        gap='1'
+                        color='blackAlpha.700'
+                        fontWeight='bold'
+                    >
+                        <GridItem pl='2' bg={useColorModeValue('orange.300', 'orange.300')} area={'nav'}>
+                            <Section>
+                                <Role>
+                                    {t('Role')}
+                                </Role>
+                            </Section>
+                        </GridItem>
+                        <GridItem pl='2' area={'main'}>
+                            <Section>
+                                <Heading as="h3" variant="section-title">
+                                Bio
+                                </Heading>
+                                <BioSection>
+                                    <BioYear>
+                                        1999
+                                    </BioYear>
+                                    Born in Poland.
+                                </BioSection>
+                                <BioSection>
+                                    <BioYear>
+                                        2006
+                                    </BioYear>
+                                    Starting my education.
+                                </BioSection>
+                                <BioSection>
+                                    <BioYear>
+                                        2015
+                                    </BioYear>
+                                    Becoming a lifeguard and starting my first job.
+                                </BioSection>                 
+                                <BioSection>
+                                    <BioYear>
+                                        2018
+                                    </BioYear>
+                                    Starting my studies at Jagiellonian University (Cracow).
+                                </BioSection>                                          
+                                <BioSection>
+                                    <BioYear>
+                                        2020
+                                    </BioYear>
+                                    Started working in Blacklabel as JS Developer. Ahoy pirates!
+                                </BioSection>
+                                <BioSection>
+                                    <BioYear>
+                                        2021
+                                    </BioYear>
+                                    Completed the bachelors degree in Computer Science at Jagiellonian University in Cracow.
+                                </BioSection>
+                            </Section>
+                        </GridItem>
+                    </Grid>
                 </Section>
 
                 <Section delay={ 0.2 }>
                     <Heading as="h3" variant="section-title"> 
                         Work
                     </Heading>
-                    <Paragraph>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of {' '}
-                        <NextLink href="/works/arkanoid">
-                            <Link>
-                                Arkanoid
-                            </Link>
-                        </NextLink>
-                        .
+                    <Paragraph>
+                        {t('mainWork')}
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works">
