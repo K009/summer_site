@@ -1,22 +1,26 @@
-import { Container, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid, Divider, useColorModeValue } from "@chakra-ui/react";
 import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
+import { withTranslation } from 'react-i18next';
 
 import thumbArkanoid from "../public/images/inkdrop_eyecatch.png"
+import thumbRecipes from "../public/images/dominik.jpg"
 
-const Works = () => {
+const Works = ({ t }) => {
     return (
         <Container mt={6}>
-            <Heading as="h3" fontSize={20} mb={4}>
-                Works
+            <Heading as="h3" fontSize={20} my={14}>
+                {t('workWork')}
             </Heading>
+
+            <Divider my={10}/>
 
             <SimpleGrid columns={[ 1,1,2 ]} gap={6}>
                 <Section>
                     <WorkGridItem
                         id="arkanoid"
-                        title="Arkanoid"
-                        thumbnail={thumbArkanoid}
+                        title={t('Role')}
+                        thumbnail={useColorModeValue(thumbArkanoid, thumbRecipes)}
                         >
                             Arcade, old-school 2D game.
                         </WorkGridItem>
@@ -44,4 +48,4 @@ const Works = () => {
     )
 }
 
-export default Works;
+export default withTranslation()(Works);
