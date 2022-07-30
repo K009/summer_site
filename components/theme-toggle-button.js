@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { Button, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { RepeatIcon } from "@chakra-ui/icons";
 import i18next from '../pages/i18n';
 
 const ThemeToggleButton = () => {
@@ -15,11 +16,11 @@ const ThemeToggleButton = () => {
                 exit={{ y:20, opacity: 0 }}
                 transition={{ duration: 0.2 }}
             >
-                <Button 
+                <IconButton 
                     aria-label="Toggle theme"
                     colorScheme={useColorModeValue('purple', 'orange')}
+                    icon={<RepeatIcon />}
                     onClick={() => {
-                        setTimeout(function(){
                             const languages = ['developer', 'tester'];
                             let languageIndex;
     
@@ -34,10 +35,8 @@ const ThemeToggleButton = () => {
                                 });
     
                             toggleColorMode()
-                        },500)
                     }}
-                >Who am I?
-                </Button>
+                />
             </motion.div>
         </AnimatePresence>
     )

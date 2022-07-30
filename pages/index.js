@@ -20,11 +20,7 @@ const Page = ({ t }) => {
                     <Heading as="h2" variant="page-title">
                         Dominik Chudy
                     </Heading>
-                    <NextLink href="/developer">
-                            <Link>
-                                <ThemeToggleButton />
-                            </Link>
-                    </NextLink>
+                    <ThemeToggleButton />
                     </Box>
                     <Box 
                         flexShrink={ 0 }
@@ -86,16 +82,36 @@ const Page = ({ t }) => {
                     </BioSection>               
                 </Section>
 
-               
-
                 <Section delay={ 0.2 }>
+                    <Heading as="h3" variant="section-title"> 
+                        Work
+                    </Heading>
+                    <Paragraph>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of {' '}
+                        <NextLink href="/works/arkanoid">
+                            <Link>
+                                Arkanoid
+                            </Link>
+                        </NextLink>
+                        .
+                    </Paragraph>
+                    <Box align="center" my={4}>
+                        <NextLink href="/works">
+                            <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
+                                My portfolio
+                            </Button>
+                        </NextLink>
+                    </Box>
+                </Section>               
+
+                <Section delay={ 0.3 }>
                     <Heading as="h3" variant="section-title">
                         I ♡
                     </Heading>
                     <Paragraph>Running, Music, Books, Design</Paragraph>
                 </Section>
 
-                <Section delay={ 0.3 }>
+                <Section delay={ 0.4 }>
                     <Heading as="h3" variant="section-title">
                         On the web
                     </Heading>
