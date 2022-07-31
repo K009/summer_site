@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Button, Container, Box, Heading, Image, useColorModeValue, Link, SimpleGrid, List, ListItem, Icon, Grid, GridItem } from '@chakra-ui/react';
+import { Button, Container, Box, Heading, Image, useColorModeValue, Link, SimpleGrid, List, ListItem, Icon, Grid, GridItem, Text } from '@chakra-ui/react';
 import Layout from '../components/layouts/article'
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -52,9 +52,9 @@ const Page = ({ t }) => {
                         color='blackAlpha.700'
                         fontWeight='bold'
                     >
-                        <GridItem pl='2' bg={useColorModeValue('#009F93', 'orange.300')} area={'nav'}>
+                        <GridItem pl='2' bg={useColorModeValue('transparent', 'orange.300')} area={'nav'}>
                             <Section>
-                                <Role>
+                                <Role flag={useColorModeValue('tester', 'developer')}>
                                     {t('Role')}
                                 </Role>
                             </Section>
