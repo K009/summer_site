@@ -106,7 +106,7 @@ const Page = ({ t }) => {
                 </Section>
 
                 <Section delay={ 0.2 }>
-                    <Heading as="h3" variant="section-title"> 
+                    <Heading as="h3" variant="section-title" mt={{ base: '0px', sm: '60px', md:'0px', lg: '0px' }}> 
                         Work
                     </Heading>
                     <Paragraph>
