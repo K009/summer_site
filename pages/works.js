@@ -3,8 +3,8 @@ import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
 import { withTranslation } from 'react-i18next';
 
-import thumbArkanoid from "../public/images/inkdrop_eyecatch.png"
-import thumbRecipes from "../public/images/dominik.jpg"
+import thumbArkanoid from "../public/images/arkanoid2.png"
+import thumbInvite from "../public/images/invite.png"
 
 const Works = ({ t }) => {
     return (
@@ -18,29 +18,20 @@ const Works = ({ t }) => {
             <SimpleGrid columns={[ 1,1,2 ]} gap={6}>
                 <Section>
                     <WorkGridItem
-                        id="arkanoid"
-                        title={t('Role')}
-                        thumbnail={useColorModeValue(thumbArkanoid, thumbRecipes)}
+                        id={t('1stProjectId')}
+                        title={t('1stProjectTitle')}
+                        thumbnail={useColorModeValue(thumbInvite, thumbArkanoid)}
                         >
-                            Arcade, old-school 2D game.
+                            {t('1stProjectDescription')}
                         </WorkGridItem>
                 </Section>
                 <Section>
-                    <WorkGridItem
-                        id="arkanoid"
-                        title="Arkanoid"
-                        thumbnail={thumbArkanoid}
+                <WorkGridItem
+                        id={t('1stProjectId')}
+                        title={t('1stProjectTitle')}
+                        thumbnail={useColorModeValue(thumbInvite, thumbArkanoid)}
                         >
-                            Arcade, old-school 2D game.
-                        </WorkGridItem>
-                </Section>
-                <Section>
-                    <WorkGridItem
-                        id="arkanoid"
-                        title="Arkanoid"
-                        thumbnail={thumbArkanoid}
-                        >
-                            Arcade, old-school 2D game.
+                            {t('1stProjectDescription')}
                         </WorkGridItem>
                 </Section>
             </SimpleGrid>

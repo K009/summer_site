@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article';
 const Work = () => {
     return (
         <Layout title="Arkanoid">
-            <Container>
+            <Container mt={6}>
                 <Title>
                     Arkanoid <Badge>2022</Badge>
                 </Title>
@@ -38,8 +38,8 @@ const Work = () => {
                     </ListItem>                                                            
                 </List>
 
-                <WorkImage src="/images/inkdrop_eyecatch.png" alt="Arkanoid" />
-                <WorkImage src="/images/inkdrop_eyecatch.png" alt="Arkanoid" />
+                <WorkImage src="/images/arkanoid2.png" alt="Arkanoid" />
+                <WorkImage src="/images/arkanoid3.png" alt="Arkanoid" />
             </Container>
         </Layout>
     )

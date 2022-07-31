@@ -3,7 +3,7 @@ import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import { GridItem } from "../components/grid-item";
 
-import thumbWorkflow from "../public/images/inkdrop_eyecatch.png"
+import thumbWorkflow from "../public/images/arkanoid3.png"
 
 const Link = () => (
     <Layout title="Posts">
@@ -11,7 +11,10 @@ const Link = () => (
             <Heading as="h3" fontSize={20} mb={4}>
                 Popular Posts
             </Heading>
-            <Section delay={0.1}>
+            <Heading as="h3" fontSize={50} my={44}>
+                work still in progress.
+            </Heading>
+            {/* <Section delay={0.1}>
                 <SimpleGrid columns={[ 1,1,2 ]} gap={6}>
                     <GridItem 
                         title="My workflow"
@@ -29,7 +32,7 @@ const Link = () => (
                         href="/"
                     />                                        
                 </SimpleGrid>
-            </Section>
+            </Section> */}
         </Container>
     </Layout>
 )
