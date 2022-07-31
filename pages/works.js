@@ -9,7 +9,7 @@ import thumbRecipes from "../public/images/dominik.jpg"
 const Works = ({ t }) => {
     return (
         <Container mt={6}>
-            <Heading as="h3" fontSize={20} my={14}>
+            <Heading as="h3" fontSize={20} my={14} css={{textAlign: 'center'}}>
                 {t('workWork')}
             </Heading>
 
