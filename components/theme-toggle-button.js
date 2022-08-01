@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { IconButton, theme, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { RepeatIcon } from "@chakra-ui/icons";
 import i18next from '../pages/i18n';
 
@@ -24,8 +24,6 @@ const ThemeToggleButton = () => {
                             const languages = ['developer', 'tester'];
                             let languageIndex;
     
-                            console.log(this)
-                            console.log(theme)
                             if(i18next.language === 'tester'){
                                 languageIndex = 0;
                             } else languageIndex = 1;

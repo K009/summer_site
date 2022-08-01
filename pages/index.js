@@ -6,7 +6,7 @@ import Paragraph from "../components/paragraph";
 import Role from "../components/role";
 import { BioSection, BioYear } from "../components/bio";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
+import { IoLogoLinkedin, IoLogoGithub, IoBook, IoVideocamSharp, IoWalkSharp } from 'react-icons/io5';
 import ThemeToggleButton from '../components/theme-toggle-button';
 
 // the hook
@@ -125,7 +125,38 @@ const Page = ({ t }) => {
                     <Heading as="h3" variant="section-title">
                         I ♡
                     </Heading>
-                    <Paragraph>Running, Music, Books, Design</Paragraph>
+                    <List>
+                        <ListItem>
+                            <Link href="https://en.wikipedia.org/wiki/Running" target="_blank">
+                                <Button 
+                                    variant="ghost"                     
+                                    leftIcon={<Icon as={IoWalkSharp} />}
+                                >
+                                    Running (from 5k to mountain running)
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://en.wikipedia.org/wiki/Book" target="_blank">
+                                <Button 
+                                    variant="ghost"                     
+                                    leftIcon={<Icon as={IoBook} />}
+                                >
+                                    Books (biographies, fantasy, sci-fi)
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://en.wikipedia.org/wiki/Film" target="_blank">
+                                <Button 
+                                    variant="ghost"                     
+                                    leftIcon={<Icon as={IoVideocamSharp} />}
+                                >
+                                    Movies (of each species)
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
                 </Section>
 
                 <Section delay={ 0.4 }>
