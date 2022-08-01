@@ -12,8 +12,8 @@ const Work = () => {
                     Arkanoid <Badge>2022</Badge>
                 </Title>
                 <P>
-                    Arcade, old-school 2D game. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software
+                    Arcade, old-school 2D game. One of the several ones like Breakout, Space Invaders or Brickout. For now there's a possibility to play 5 levels with the boss on the final one. During working on this project I had a lot fun of working on the game physics or creating some "special bricks" that drop a superpower after destroying them.
+                    Also got more familiar with typescript and developed a strategic way of thinking about the code architecture.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
@@ -29,13 +29,7 @@ const Work = () => {
                     <ListItem>
                         <Meta>Stack</Meta>
                         <span>Pure typescript</span>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Blogpost</Meta>
-                        <Link href="/">
-                            How I've Attracted The First 100 People To Pay For My Game <ExternalLinkIcon mx="2px" />
-                        </Link>
-                    </ListItem>                                                            
+                    </ListItem>                                                         
                 </List>
 
                 <WorkImage src="/images/arkanoid2.png" alt="Arkanoid" />
