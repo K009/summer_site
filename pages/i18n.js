@@ -8,8 +8,8 @@ const resources = {
   developer: {
     translation: {
         "Role": "DEVELOPER",
-        "mainWork": "I've started javascript develeopment a couple years ago. Moving from basic websites done for school projects, going through rock-paper-scissors game I became interested in JS frameworks like React or Vue. I've done some courses, thanks to which I've created more projects like RecipeApp or FavNote. Finally I decided to write about React in my Bachelor thesis, thanks to which I graduated at Jagiellonian Univeristy in Cracow. Here you can check my newest projects: ",
-        "workWork": "I like to work on my own on the projects I like. That's the main reason for creating personal projects, thanks to which I can develop my skills outside the work too. Choosing tech stack on my own and digging into the docs and api is something that I'm really looking forward to doing in my free time. Please look around, don't bother yourself.",
+        "mainWork": "I started javascript development a couple of years ago. Moving from basic websites done for school projects, going through rock-paper-scissors games I became interested in JS frameworks like React or Vue. I've done some courses, thanks to which I've created more projects like RecipeApp or FavNote (checkout my GitHub). Finally, I decided to write about React in my Bachelor's thesis, within which I created a simple card game for two or three players that we call in Poland - 'Piotruś'. Here you can check my newest projects: ",
+        "workWork": "I'm keen on working on my small personal projects. I've got dozens of ideas for building software products. Making tiny prototypes in my free time is something that I really like. Please look around, don't bother yourself.",
 
         "1stProjectId": "arkanoid",
         "1stProjectTitle": "Arkanoid",
@@ -19,8 +19,8 @@ const resources = {
   tester: {
     translation: {
         "Role": "TESTER",
-        "mainWork": "This path of my career began during my second year in Blacklabel. One of our teams needed someone to test their code because a lot of bugs have occured. I've started with manual testing moving to more advanced topics like testing frameworks, automated tests, getting data from several APIS to check correctness. I even started writing our own testing framework and plenty of tests to keep the key functionalities in our project valid and correct. Here you can check my projects in which I worked as a tester:",
-        "workWork": "What I really like about testing is keeping the high quality of the product you're working on. I can't imagine flying in a plane in which all mechanisms and every piece haven't been tested thousands a time to keep all the passengers secure. It works exactly the same in case of software products. All clients must be satisfied using it and no major bugs can occur. Please look around on projects I've worked on, don't bother yourself.",
+        "mainWork": "This path of my career began during my second year in Blacklabel. One of our teams needed a tester to keep high quality of the code they were creating. I've started with manual testing moving to more advanced topics like testing frameworks, automated tests, and tests architecture. I also wrote our own testing framework and plenty of tests to keep the key functionalities in our project valid and correct. Here you can check my projects in which I worked as a tester:",
+        "workWork": "What I really like about testing is that it makes the software more reliable and easy to use. Detecting errors before public releases certainly speeds up the whole process of development. Having a tester in your team is always a good idea. Please look around on projects I've worked on, don't bother yourself.",
 
         "1stProjectId": "invite",
         "1stProjectTitle": "Invite",

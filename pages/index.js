@@ -74,19 +74,19 @@ const Page = ({ t }) => {
                                     <BioYear>
                                         2006
                                     </BioYear>
-                                    Starting my education.
+                                    Started my education.
                                 </BioSection>
                                 <BioSection>
                                     <BioYear>
                                         2015
                                     </BioYear>
-                                    Becoming a lifeguard and starting my first job.
+                                    Became a lifeguard and began my first job.
                                 </BioSection>                 
                                 <BioSection>
                                     <BioYear>
                                         2018
                                     </BioYear>
-                                    Starting my studies at Jagiellonian University (Cracow).
+                                    Started my IT studies at Jagiellonian University (Cracow).
                                 </BioSection>                                          
                                 <BioSection>
                                     <BioYear>
@@ -98,7 +98,7 @@ const Page = ({ t }) => {
                                     <BioYear>
                                         2021
                                     </BioYear>
-                                    Completed the bachelors degree in Computer Science at Jagiellonian University in Cracow.
+                                    Completed my bachelor's degree in Computer Science at Jagiellonian University in Cracow.
                                 </BioSection>
                             </Section>
                         </GridItem>
