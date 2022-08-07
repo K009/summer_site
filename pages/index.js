@@ -98,7 +98,7 @@ const Page = ({ t }) => {
                                     <BioYear>
                                         2021
                                     </BioYear>
-                                    Completed my bachelor's degree in Computer Science at Jagiellonian University in Cracow.
+                                    Completed my bachelors degree in Computer Science at Jagiellonian University in Cracow.
                                 </BioSection>
                             </Section>
                         </GridItem>

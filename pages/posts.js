@@ -1,9 +1,5 @@
-import { Container, Heading, SimpleGrid } from "@chakra-ui/layout";
+import { Container, Heading } from "@chakra-ui/layout";
 import Layout from "../components/layouts/article";
-import Section from "../components/section";
-import { GridItem } from "../components/grid-item";
-
-import thumbWorkflow from "../public/images/arkanoid3.png"
 
 const Link = () => (
     <Layout title="Posts">

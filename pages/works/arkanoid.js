@@ -12,7 +12,7 @@ const Work = () => {
                     Arkanoid <Badge>2022</Badge>
                 </Title>
                 <P>
-                    Arcade, old-school 2D game. One of the several ones like Breakout, Space Invaders or Brickout. For now there's a possibility to play 5 levels with the boss on the final one. During working on this project I had a lot fun of working on the game physics or creating some "special bricks" that drop a superpower after destroying them.
+                    Arcade, old-school 2D game. One of the several ones like Breakout, Space Invaders or Brickout. For now there&apos;s a possibility to play 5 levels with the boss on the final one. During working on this project I had a lot fun of working on the game physics or creating some &apos;special bricks&apos; that drop a superpower after destroying them.
                     Also got more familiar with typescript and developed a strategic way of thinking about the code architecture.
                 </P>
                 <List ml={4} my={4}>

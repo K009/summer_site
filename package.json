@@ -2,11 +2,14 @@
   "name": "summer_site",
   "version": "1.0.0",
   "description": "Dominik's website",
+  "homepage": "https://k009.github.io/summer_site",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "prettier": "prettier -write .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "Dominik Chudy",
@@ -17,6 +20,7 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "framer-motion": "^6.5.1",
+    "gh-pages": "^4.0.0",
     "i18next": "^21.8.14",
     "icons": "^1.0.0",
     "ionicons": "^6.0.2",

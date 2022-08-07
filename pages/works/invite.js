@@ -1,4 +1,4 @@
-import { Container, List, ListItem, Badge, Link } from '@chakra-ui/react';
+import { Container, List, ListItem, Link } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Title, WorkImage, Meta } from '../../components/work';
 import P from '../../components/paragraph';
@@ -12,7 +12,7 @@ const Work = () => {
                     Invite
                 </Title>
                 <P>
-                    Invite is an Iot project regarding rental business. Hotel management system, integrated with booking providers and many IoT devices. I've been working on keeping high quality of the product by writing dozens of automated tests and also keeping an eye on the whole test architecture.
+                    Invite is an Iot project regarding rental business. Hotel management system, integrated with booking providers and many IoT devices. I&apos;ve been working on keeping high quality of the product by writing dozens of automated tests and also keeping an eye on the whole test architecture.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
