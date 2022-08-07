@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { RepeatIcon } from "@chakra-ui/icons";
-import i18next from '../pages/i18n';
+import i18next from '../i18n/i18n';
 
 const ThemeToggleButton = () => {
     const { toggleColorMode } = useColorMode()
