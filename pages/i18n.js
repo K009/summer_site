@@ -9,11 +9,23 @@ const resources = {
     translation: {
         "Role": "DEVELOPER",
         "mainWork": "I started javascript development a couple of years ago. Moving from basic websites done for school projects, going through rock-paper-scissors games I became interested in JS frameworks like React or Vue. I've done some courses, thanks to which I've created more projects like RecipeApp or FavNote (checkout my GitHub). Finally, I decided to write about React in my Bachelor's thesis, within which I created a simple card game for two or three players that we call in Poland - 'Piotruś'. Here you can check my newest projects: ",
-        "workWork": "I'm keen on working on my small personal projects. I've got dozens of ideas for building software products. Making tiny prototypes in my free time is something that I really like. Please look around, don't bother yourself.",
+        "workWork": "Besides professional projects, I'm keen on working on my small personal projects. I've got dozens of ideas for building software products. Making tiny prototypes in my free time is something that I really like. Please look around, don't bother yourself.",
 
-        "1stProjectId": "arkanoid",
-        "1stProjectTitle": "Arkanoid",
-        "1stProjectDescription": "Arcade, old-school 2D game.",
+        "1stProjectId": "highcharts",
+        "1stProjectTitle": "Highcharts development",
+        "1stProjectDescription": "Development of chart's library.",
+
+        "2ndProjectId": "harvard",
+        "2ndProjectTitle": "Harvard charts",
+        "2ndProjectDescription": "Custom charts for the medical department of Harvard University.",
+
+        "3rdProjectId": "witronix",
+        "3rdProjectTitle": "Wi-tronix charts",
+        "3rdProjectDescription": "Custom charts for Wi-tronix - the provider of locomotive management solutions.",
+
+        "4thProjectId": "arkanoid",
+        "4thProjectTitle": "Arkanoid",
+        "4thProjectDescription": "Arcade, old-school 2D game.",        
     }
   },
   tester: {
