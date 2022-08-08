@@ -47,7 +47,7 @@ const Page = ({ t }) => {
                         templateAreas={`"nav main"`}
                         gridTemplateRows={'50px 1fr 30px'}
                         gridTemplateColumns={'150px 1fr'}
-                        h='350px' //work on that because on phone view the text overlaps with the work section
+                        h='350px'
                         gap='1'
                         color='blackAlpha.700'
                         fontWeight='bold'
@@ -106,7 +106,7 @@ const Page = ({ t }) => {
                 </Section>
 
                 <Section delay={ 0.2 }>
-                    <Heading as="h3" variant="section-title" mt={{ base: '0px', sm: '60px', md:'0px', lg: '0px' }}> 
+                    <Heading as="h3" variant="section-title" mt={{ base: '450px', sm: '60px', md:'0px', lg: '0px' }}> 
                         Work
                     </Heading>
                     <Paragraph>
